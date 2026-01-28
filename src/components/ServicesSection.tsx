@@ -1,5 +1,6 @@
 import { Building2, Church, Rocket, User, BarChart3, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import servicesImage from "@/assets/services-image.jpg";
 
 const services = [
   {
@@ -41,8 +42,13 @@ const services = [
 
 export const ServicesSection = () => {
   return (
-    <section id="servicos" className="section-padding gold-gradient-light">
-      <div className="container-custom">
+    <section id="servicos" className="section-padding gold-gradient-light relative overflow-hidden">
+      {/* Background image with overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
+        style={{ backgroundImage: `url(${servicesImage})` }}
+      />
+      <div className="container-custom relative z-10">
         <div className="text-center mb-16">
           <span className="text-primary font-medium text-sm uppercase tracking-wider mb-4 block">
             Nossos serviços

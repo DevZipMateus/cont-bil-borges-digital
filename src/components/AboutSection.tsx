@@ -1,19 +1,23 @@
 import { Quote } from "lucide-react";
+import aboutImage from "@/assets/about-image.jpg";
 
 export const AboutSection = () => {
   return (
     <section id="sobre" className="section-padding bg-background">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Image/Visual Side */}
+          {/* Image Side */}
           <div className="relative">
-            <div className="aspect-[4/3] rounded-3xl gold-gradient-light border border-border/50 overflow-hidden relative">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 rounded-full gold-gradient flex items-center justify-center mx-auto mb-6 shadow-gold">
-                    <span className="text-primary-foreground font-display font-bold text-3xl">CB</span>
-                  </div>
-                  <p className="text-lg text-muted-foreground font-display italic">
+            <div className="aspect-[4/3] rounded-3xl overflow-hidden relative border border-border/50 shadow-elegant">
+              <img 
+                src={aboutImage} 
+                alt="Contador profissional analisando documentos financeiros" 
+                className="w-full h-full object-cover"
+              />
+              {/* Overlay with quote */}
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent flex items-end">
+                <div className="p-6">
+                  <p className="text-foreground font-display text-lg italic">
                     "O sucesso do nosso cliente é o nosso sucesso"
                   </p>
                 </div>
