@@ -1,5 +1,6 @@
 import { ArrowRight, Award, Users, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const stats = [
   { icon: Award, value: "25+", label: "Anos de experiência" },
@@ -11,8 +12,16 @@ export const HeroSection = () => {
   return (
     <section
       id="inicio"
-      className="min-h-screen flex items-center pt-24 pb-16 gold-gradient-light relative overflow-hidden"
+      className="min-h-screen flex items-center pt-24 pb-16 relative overflow-hidden"
     >
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-background/85" />
+      
       {/* Decorative elements */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl" />
