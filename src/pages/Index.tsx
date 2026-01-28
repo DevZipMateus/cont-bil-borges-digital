@@ -6,6 +6,7 @@ import { ValuesSection } from "@/components/ValuesSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import EgestorERP from "@/components/EgestorERP";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
+        <EgestorERP />
         <ValuesSection />
         <ContactSection />
       </main>
