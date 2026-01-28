@@ -1,4 +1,5 @@
 import { Eye, Target, Heart, Shield, Lightbulb, Clock, Award } from "lucide-react";
+import valuesImage from "@/assets/values-image.jpg";
 
 const values = [
   {
@@ -30,8 +31,13 @@ const values = [
 
 export const ValuesSection = () => {
   return (
-    <section id="valores" className="section-padding bg-background">
-      <div className="container-custom">
+    <section id="valores" className="section-padding bg-background relative overflow-hidden">
+      {/* Background image with overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5"
+        style={{ backgroundImage: `url(${valuesImage})` }}
+      />
+      <div className="container-custom relative z-10">
         {/* Mission & Vision */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           <div className="bg-card border border-border/50 rounded-2xl p-8 relative overflow-hidden group hover:shadow-elegant transition-shadow duration-300">
