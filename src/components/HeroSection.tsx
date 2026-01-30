@@ -87,7 +87,7 @@ export const HeroSection = () => {
           </div>
 
           {/* Video - Right Side */}
-          <div className="relative animate-fade-in hidden lg:block py-8" style={{ animationDelay: "0.4s" }}>
+          <div className="relative animate-fade-in hidden lg:block" style={{ animationDelay: "0.4s" }}>
             <div className="relative rounded-2xl overflow-hidden shadow-elegant border border-border/30">
               <video
                 autoPlay
