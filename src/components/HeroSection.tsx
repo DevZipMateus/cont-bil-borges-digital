@@ -88,13 +88,13 @@ export const HeroSection = () => {
 
           {/* Video - Right Side */}
           <div className="relative animate-fade-in hidden lg:block" style={{ animationDelay: "0.4s" }}>
-            <div className="relative rounded-2xl overflow-hidden shadow-elegant border border-border/30">
+            <div className="relative rounded-2xl overflow-hidden shadow-elegant border border-border/30 max-h-[400px]">
               <video
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="w-full h-auto"
+                className="w-full h-full object-cover"
               >
                 <source src="/Cliente_1_1_1511494030980270.mp4" type="video/mp4" />
               </video>
