@@ -94,7 +94,7 @@ export const HeroSection = () => {
                 loop
                 muted
                 playsInline
-                className="w-full h-auto object-cover aspect-video"
+                className="w-full h-auto"
               >
                 <source src="/Cliente_1_1_1511494030980270.mp4" type="video/mp4" />
               </video>
