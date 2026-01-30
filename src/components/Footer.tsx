@@ -1,4 +1,5 @@
 import { Instagram } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,18 +9,8 @@ export const Footer = () => {
       <div className="container-custom">
         <div className="grid md:grid-cols-3 gap-8 items-center">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full gold-gradient flex items-center justify-center">
-              <span className="text-primary-foreground font-display font-bold text-lg">CB</span>
-            </div>
-            <div>
-              <span className="font-display text-lg font-semibold block">
-                Contábil Borges
-              </span>
-              <span className="text-accent-foreground/70 text-sm">
-                Hagios Borges Contabilidade
-              </span>
-            </div>
+          <div className="flex items-center">
+            <img src={logo} alt="Hagios Borges Contabilidade" className="h-16 w-auto" />
           </div>
 
           {/* Navigation */}
