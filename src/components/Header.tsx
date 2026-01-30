@@ -31,7 +31,7 @@ export const Header = () => {
   const handleNavClick = () => {
     setIsMobileMenuOpen(false);
   };
-  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-card/95 backdrop-blur-md shadow-elegant py-3" : "bg-transparent py-5"}`}>
+  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-elegant py-3" : "bg-background/80 backdrop-blur-sm py-5"}`}>
       <div className="container-custom flex items-center justify-between">
         <a href="#inicio" className="flex items-center gap-3">
           <img src={logo} alt="Hagios Borges Contabilidade" className="h-20 w-auto" />
