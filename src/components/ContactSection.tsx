@@ -17,8 +17,8 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Endereço",
-    value: "Alameda Paço Lumiar, 29",
-    href: null,
+    value: "Av. Djalma Marques/Venceslau Braz, 425 Fabril - Centro, São Luís - MA, 65020-640",
+    href: "https://maps.app.goo.gl/c9FhKKn4M4nyXzkn9",
   },
   {
     icon: Clock,
